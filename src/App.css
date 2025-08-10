@@ -1,0 +1,210 @@
+
+* {
+    transition: all 80ms ease-in-out;
+}
+@keyframes smoothTyping {
+    from {
+        opacity: 0;
+        transform: translateX(-2px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.homePageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(224, 224, 224, 1);
+    height: 100vh;
+    background: url('file:///c:/Users/udits/Downloads/image.jpg') no-repeat center center/cover;
+}
+
+
+.formWrapper {
+    background: rgba(26, 26, 26, 0.9); /* Translucent effect */
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+footer a {
+    color: #4aee88;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainLabel {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.homePageLogo {
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+.inputBox {
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-bottom: 14px;
+    background:rgba(38, 38, 38, 1) ;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    caret-color: #ffffff; /* Custom caret color */
+    overflow: hidden;
+    animation: smoothTyping 0.3s ease-in-out;
+}
+
+.inputBox::placeholder {
+    opacity: 0.6;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.inputBox:focus::placeholder {
+    opacity: 0.3;
+}
+
+/* Smooth Text Appearance */
+.inputBox::after {
+    content: attr(data-content);
+    display: inline-block;
+    animation: smoothTyping 0.3s ease-in-out;
+}
+.btn {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.joinBtn {
+    background: #4aed88;
+    width: 100px;
+    margin-left: 10px;
+}
+.createRoomBtn{
+    background: #4aed88;
+    width: 120px;
+    
+}
+.leaveBtn{
+    background: #ff0808;
+    width: 100px;
+    margin-left: auto;
+}
+
+.copyBtn {
+    background: #4aed88;
+    width: 100%;
+    margin-left: auto;
+}
+.copyBtn1{
+    background: #4aed88;
+    width: 100px;
+    margin-bottom: 5px;
+}
+
+.joinBtn:hover{
+    background: #2b824c;
+}
+.createRoomBtn:hover{
+    background: #2b824c;
+}
+.leaveBtn:hover{
+    background: #822b2b;
+}
+
+.copyBtn:hover{
+    background: #2b824c;
+}
+.copyBtn1:hover{
+    background: #2b824c;
+}
+.createInfo {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.createNewBtn {
+    color: #4aed88;
+    text-decoration: none;
+    border-bottom: 1px solid #4aed88;
+    transition: all 0.3s ease-in-out;
+}
+
+.createNewBtn:hover,
+footer a:hover {
+    color: #368654;
+    border-color: #368654;
+}
+
+.mainWrap {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+}
+
+.aside {
+    background: #1c1e29;
+    padding: 16px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.asideInner {
+    flex: 1;
+}
+
+.clientsList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+.userName {
+    margin-top: 10px;
+}
+
+
+
+.leaveBtn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+.CodeMirror {
+    min-height: calc(100vh - 20px);
+    font-size: 15x;
+    line-height: 1.6;
+    padding-top: 20px;
+    
+}
